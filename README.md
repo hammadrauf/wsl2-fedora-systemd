@@ -4,8 +4,12 @@ This Docker Image is used to build WSL2 Image for Fedora 40, that is using Syste
 
 ## Steps
 First switch to a Linux environment, possibly a standard WSL2 Ubuntu.
+```
+C:\Users\XYZ>wsl -d Ubuntu-22.04
+```
 
-Steps to do:
+
+Steps to do in WSL2:
 ```
 sudo apt install -y nano podman
 mkdir SystemdFedora
