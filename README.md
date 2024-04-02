@@ -30,7 +30,7 @@ podman export $podmanContainerID > /mnt/c/temp/fedora_systemd.tar
 Then in the Host Windows System, import the tar file generated above, as follows:
 ```
 C:\Users\XYZ>wsl -d Ubuntu-22.04 --shutdown
-C:\Users\XYZ>wsl --unregister fedora40
+C:\Users\XYZ>wsl --unregister fedora40       (If exists previuosly)
 
 C:\Users\XYZ>wsl --import fedora40 "C:\Users\XYZ\VirtualBox VMs\wsls-custom\fedora40" "C:\temp\fedora_systemd.tar"
 Import in progress, this may take a few minutes.
