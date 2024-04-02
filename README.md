@@ -12,8 +12,8 @@ C:\Users\XYZ>wsl -d Ubuntu-22.04
 Steps to do in WSL2:
 ```
 sudo apt install -y nano podman git
-#mkdir SystemdFedora
-git clone repo .
+#mkdir wsl2-fedora-systemd
+git clone https://github.com/hammadrauf/wsl2-fedora-systemd.git .
 cd wsl2-fedora-systemd
 ls -l
 nano Dockerfile
