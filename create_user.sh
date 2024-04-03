@@ -20,7 +20,7 @@ cat >> /home/wsl01/.bashrc << EOF2
 ##                                    - https://github.com/marchaesen/vcxsrv - Repo new location
 if grep -q WSL2 /proc/version; then
     # execute route.exe in the windows to determine its IP address
-    DISPLAY=\$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
+    DISPLAY=\$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print \$4}'):0.0
 else
     # In WSL1 the DISPLAY can be the localhost address
     if grep -q icrosoft /proc/version; then
