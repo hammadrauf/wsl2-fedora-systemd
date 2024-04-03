@@ -10,3 +10,6 @@ systemd=true
 [user]
 default=wsl01
 EOF
+cat > /etc/sudoers << EOF
+wsl01   ALL=(ALL)   NOPASSWD: ALL
+EOF
