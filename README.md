@@ -73,3 +73,7 @@ wsl --set-default ubuntu-first
 ```
 You can compress the tar file backup to .tar.gz using software like 7Zip.
 
+## Default VHDX file location
+```
+%LocalAppData%\Packages\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\LocalState
+```
