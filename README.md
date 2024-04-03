@@ -2,6 +2,19 @@
 
 This Docker Image is used to build WSL2 Image for Fedora 40, that is using SystemD.
 
+## Features
+The resulting WSL2 Fedora Image has the following features:
+
+1. SystemD is enabled.
+2. Sudo priviliged user is created and configured as default WSL2 user. UserName: wsl01, Pwd: wsl01.
+3. Sudo permissions modified to never ask password for user wsl01.
+4. "nano" Editor is installed.
+5. "ps" is installed.
+6. "xclock" X-Window sample app is installed.
+
+To View XWindows application 'xclock' host Windows 10/11 computer should be running a X-Window-Server. One such Open Source one is linked below. Make sure that its runtime configuration allows unauthenticated connections from X-Clients:
+[https://github.com/marchaesen/vcxsrv/releases/download/21.1.10/vcxsrv-64.21.1.10.0.installer.exe](https://github.com/marchaesen/vcxsrv/releases/download/21.1.10/vcxsrv-64.21.1.10.0.installer.exe)
+
 ## Steps
 First switch to a Linux environment, possibly a standard WSL2 Ubuntu.
 ```
