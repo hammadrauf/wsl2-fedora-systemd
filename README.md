@@ -71,4 +71,5 @@ wsl --import ubuntu-first "C:\Users\XYZ\VirtualBox VMs\wsls-custom\ubuntu-first"
 wsl -l -v
 wsl --set-default ubuntu-first
 ```
+You can compress the tar file backup to .tar.gz using software like 7Zip.
 
