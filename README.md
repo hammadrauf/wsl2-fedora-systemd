@@ -17,12 +17,18 @@ To View XWindows application 'xclock' host Windows 10/11 computer should be runn
 
 ## Steps
 First switch to a Linux environment, possibly a standard WSL2 Ubuntu.
+  
+Launch WSL
 ```
 C:\Users\XYZ>wsl -d Ubuntu-22.04
 ```
+OR if this is your first time using WSL then
+```
+C:\Users\XYZ>wsl --install Ubuntu-22.04
+```
+Then follow WSL prompts to create a sudo user. Then continue with following steps.
 
-
-Steps to do in WSL2:
+### Steps to do in WSL2:
 ```
 sudo apt install -y nano podman git
 #mkdir wsl2-fedora-systemd
