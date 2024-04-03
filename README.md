@@ -47,3 +47,28 @@ wsl -d fedora40
 wsl -d fedora40 --shutdown
 ```
 
+## Steps for 2nd Ubuntu WSL2 Instance - from official Ubuntu tar ball
+Get tar.gz wsl Image from Ubuntu Sites.  
+- [https://cloud-images.ubuntu.com/wsl/](https://cloud-images.ubuntu.com/wsl/)
+- [https://cloud-images.ubuntu.com/wsl/noble/current/](https://cloud-images.ubuntu.com/wsl/noble/current/)
+- [https://cloud-images.ubuntu.com/releases/](https://cloud-images.ubuntu.com/releases/)
+
+Make sure the file name has amd64-wsl and the file type is .tar.gz (GZIP tarball).
+
+Then use the following command:
+```
+wsl.exe --import <Distribution Name> <Install Folder> <.TAR.GZ File Path>
+```
+
+## Steps for 2nd Ubuntu WSL2 Instance - from MS Windows Store
+Assuming, you already have atleast 1 installation called "Ubuntu".  
+Use the following commands:
+```
+wsl --export Ubuntu "C:\Users\XYZ\VirtualBox VMs\wsls-custom\ubuntu-first\ubuntu-first.tar"   # Backup of first instance
+wsl --unregister Ubuntu   # Deletes the old instance
+wsl --install Ubuntu    # Creates a fresh Install
+wsl --import ubuntu-first "C:\Users\XYZ\VirtualBox VMs\wsls-custom\ubuntu-first" "C:\Users\XYZ\VirtualBox VMs\wsls-custom\ubuntu-first\ubuntu-first.tar"
+wsl -l -v
+wsl --set-default ubuntu-first
+```
+
